@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<body>
+    
+        <center><table border="1" >
+        <th><p>Média:<span id="med"></span></p></th>
+        <th><p>Situação:<span id="sit"></span></p></th>
+        </table></center>
+
+    <script  >
+        let n1 = parseFloat(prompt('Digite a nota 1'));
+        let n2 = parseFloat(prompt('Digite a nota 2'));
+        let media = (n1 + n2)/2
+
+        if  (media >= 6) { 
+            document.getElementById('med').innerHTML = media
+            document.getElementById('sit').innerHTML = 'Aprovado'
+            document.getElementById('sit').style.color = 'blue'
+        
+        } else {
+        
+            document.getElementById('med').innerHTML = media
+            document.getElementById('sit').innerHTML = 'Reprovado'
+            document.getElementById('sit').style.color = 'red'
+        }
+        
+       
+    </script>
+
+
+    
+</body>
+</html>
